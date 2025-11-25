@@ -19,7 +19,7 @@ body {
 }
 
 #game {
-  background-image: url(img/background.svg);
+  background-image: url(../images/spil/background.svg);
   /* fylder hele viewport uden scroll og uden hvide kanter */
   width: 100%;
   height: 100%;
