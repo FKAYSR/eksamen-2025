@@ -78,11 +78,6 @@ body {
   top: 55vh;
 }
 
-#extra-button {
-  left: 4%;
-  top: 10vh;
-}
-
 .bubble {
   position: absolute;
   bottom: -40vh;
