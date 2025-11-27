@@ -248,6 +248,26 @@ body {
   cursor: pointer;
 }
 
+#facts-bubble {
+  position: absolute;
+  display: inline-flex;
+  right: 25vh;
+  bottom: -1vh;
+  align-items: center;
+  cursor: pointer;
+}
+
+#facts-bubble span {
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 8%;
+  color: black;
+  font-weight: bold;
+  font-size: 4vh;
+  max-width: 14vw;
+}
+
 /* Bestemmer placering af pop-up med facts */
 .facts {
   position: fixed;
