@@ -173,9 +173,9 @@ body {
   width: 20px; /* gør kisten mindre */
   max-width: 20vw; /* skalerer pænt på små/større skærme */
   bottom: 16px; /* placeret nede */
-  left: 40px; /* placeret i venstre hjørne */
+  left: 40px; /* placeret i venstre side */
   transform: none; /* fjern tidligere translate */
-  z-index: 3; /* sørg for den ligger over baggrunden */
+  z-index: 2; /* sørg for den ligger over baggrunden, bag fiskene */
 }
 
 .image-skattekiste img {
@@ -187,8 +187,6 @@ body {
   position: absolute;
   bottom: 158px;
   left: 340px;
-  transform: none;
-  position: absolute;
   transform: none;
   cursor: pointer;
 }

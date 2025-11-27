@@ -71,18 +71,17 @@ body {
   max-width: 20%;
 }
 
-.image-skattekiste {
+#skattekiste {
   position: absolute;
-  width: 20px; /* gør kisten mindre */
-  max-width: 20vw; /* skalerer pænt på små/større skærme */
-  bottom: 35px; /* placeret nede */
-  left: -80px; /* placeret i venstre hjørne */
-  transform: none; /* fjern tidligere translate */
-  z-index: 3; /* sørg for den ligger over baggrunden */
+  bottom: 16px;
+  left: 40px;
+  transform: none;
+  cursor: pointer;
+  z-index: 1;
 }
 
-.image-skattekiste img {
-  max-width: 1750%;
+#skattekiste img {
+  max-width: 50vh;
   height: auto;
 }
 
@@ -90,8 +89,6 @@ body {
   position: absolute;
   bottom: 158px;
   left: 340px;
-  transform: none;
-  position: absolute;
   transform: none;
   cursor: pointer;
 }
@@ -101,18 +98,143 @@ body {
   height: 90vh;
 }
 
-.image-fish {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  gap: 20px;
-  cursor: pointer;
-  padding: 25px;
-  z-index: 1000;
-  max-width: 1200px;
-  margin: 0 auto;
+/* Fiskenes animationer */
+#gul-kirurgfisk {
+  position: absolute;
+  max-width: 20vw; /* skalerer pænt på små/større skærme */
+  bottom: 55vh; /* placeret på y-aksen fra bunden */
+  right: -80px; /* placeret på x-aksen */
+  z-index: 3; /* sørg for den ligger over baggrunden */
+  animation: gul-kirurg-swim 22s linear infinite;
 }
 
+@keyframes gul-kirurg-swim {
+  100% {
+    transform: translateX(100px);}
+  0% {
+    transform: translateX(-2000px);}
+}
+
+#dvaergkejserfisk {
+  position: absolute;
+  max-width: 20vw;
+  bottom: 4vh;
+  right: -80px;
+  transform: none;
+  z-index: 3;
+  animation: dvaergkejserfisk-swim 16s linear infinite;
+}
+
+@keyframes dvaergkejserfisk-swim {
+  100% {
+    transform: translateX(100px) rotateY(180deg);}
+  0% {
+    transform: translateX(-2000px) rotateY(180deg);}
+}
+
+#paletkirurgfisk {
+  position: absolute;
+  max-width: 20vw;
+  bottom: 25vh;
+  right: -80px;
+  transform: none;
+  z-index: 3;
+  animation: paletkirurgfisk-swim 19s linear infinite;
+}
+
+@keyframes paletkirurgfisk-swim {
+  100% {
+    transform: translateX(100px) rotateY(180deg);}
+  0% {
+    transform: translateX(-2000px) rotateY(180deg);}
+}
+
+#klovnefisk {
+  position: absolute;
+  max-width: 20vw;
+  bottom: 40vh;
+  right: -80px;
+  transform: none;
+  z-index: 3;
+  animation: klovnefisk-swim 28s linear infinite;
+}
+
+@keyframes klovnefisk-swim {
+  100% {
+    transform: translateX(100px) rotateY(180deg);}
+  0% {
+    transform: translateX(-2000px) rotateY(180deg);}
+}
+
+#pudsefisk {
+  position: absolute;
+  max-width: 20vw;
+  bottom: 50vh;
+  right: -80px;
+  transform: none;
+  z-index: 3;
+  animation: pudsefisk-swim 22s linear infinite;
+}
+
+@keyframes pudsefisk-swim {
+  0% {
+    transform: translateX(100px) rotateY(180deg);}
+  100% {
+    transform: translateX(-2000px) rotateY(180deg);}
+}
+
+#hvidstrubet-kirurgfisk {
+  position: absolute;
+  max-width: 20vw;
+  bottom: 35vh;
+  right: -80px;
+  transform: none;
+  z-index: 3;
+  animation: hvidstrubet-kirurgfisk-swim 20s linear infinite;
+}
+
+@keyframes hvidstrubet-kirurgfisk-swim {
+  0% {
+    transform: translateX(100px);}
+  100% {
+    transform: translateX(-2000px);}
+}
+
+#pincetfisk {
+  position: absolute;
+  max-width: 20vw;
+  bottom: 20vh;
+  right: -80px;
+  transform: none;
+  z-index: 3;
+  animation: pincetfisk-swim 18s linear infinite;
+}
+
+@keyframes pincetfisk-swim {
+  0% {
+    transform: translateX(100px) rotateY(180deg);}
+  100% {
+    transform: translateX(-2000px) rotateY(180deg);}
+}
+
+#sortbaandet-kirurgfisk {
+  position: absolute;
+  max-width: 20vw;
+  bottom: 8vh;
+  right: -80px;
+  transform: none;
+  z-index: 3;
+  animation: sortbaandet-kirurgfisk-swim 15s linear infinite;
+}
+
+@keyframes sortbaandet-kirurgfisk-swim {
+  0% {
+    transform: translateX(100px) rotateY(180deg);}
+  100% {
+    transform: translateX(-2000px) rotateY(180deg);}
+}
+
+/* Tilbage knappen */
 #tilbage {
   position: absolute;
   top: 10px;
@@ -126,7 +248,7 @@ body {
   cursor: pointer;
 }
 
-/* Bestemmer placering af pop-up */
+/* Bestemmer placering af pop-up med facts */
 .facts {
   position: fixed;
   right: 16px;

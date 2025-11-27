@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "Gul kirurgfisk": "gul-kirurgfisk",
       "Dværgkejserfisk": "dvaergkejserfisk",
       "Paletkirurgfisk": "paletkirurgfisk",
-      "Klovnefisk": "klovnfisk",
+      "Klovnefisk": "klovnefisk",
       "Pudsefisk": "pudsefisk",
       "Hvidstrubet kirugfisk": "hvidstrubet-kirurgfisk",
       "Pincetfisk": "pincetfisk",
