@@ -80,32 +80,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 8000);
   }
 
-  // fishInfo.forEach((fish) => {
-  //   const classMap = {
-  //     "Gul kirurgfisk: "gul-kirurgfisk",
-  //     Dværgkejserfisk: "dvaergkejserfisk",
-  //     Paletkirurgfisk: "paletkirurgfisk",
-  //     Klovnefisk: "klovnefisk",
-  //     Pudsefisk: "pudsefisk",
-  //     "Hvidstrubet kirugfisk": "hvidstrubet-kirurgfisk",
-  //     Pincetfisk: "pincetfisk",
-  //     "Sortbåndet kirugfisk": "sortbaandet-kirurgfisk",
-  //   };
-
-    // const className = classMap[fish.fishName];
-
-    // Tilføjer event listeners til hver fisk baseret på data-strukturen
-    fishInfo.forEach((fish) => {
-      const fishDetails = document.getElementById(fish.id);
-      if (fishDetails) {
-        fishDetails.addEventListener("click", () => {
-          const fishFacts = `
-        <img src=${fish.fishImg} alt=${fish.fishName}>
-        <strong>${fish.fishName}</strong><br>
-        Fact: ${fish.fishFact}`;  // Opretter HTML tekst med fiskeoplysninger
-            // ShowTooltip er en funktion fra tidligere, forventer en parameter som vi her henter fra fishDetails
-            showTooltip(fishFacts);
-        });
-      };
-    });
+ fishInfo.forEach((fish) => {
+  const fishDetails = document.getElementById(fish.id);
+    if (fishDetails) {
+      fishDetails.addEventListener("click", () => {
+        const fishFacts = `
+          <div class= "tooltip-content">
+            <img src=${fish.fishImg} alt=${fish.fishName}>
+            <div class= "tooltip-text">
+              <strong>${fish.fishName}</strong><br>
+              Fact: ${fish.fishFact}
+            </div>
+          </div>`; 
+        showTooltip(fishFacts);
+      });
+    };
   });
+});
