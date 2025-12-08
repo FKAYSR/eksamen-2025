@@ -1,16 +1,14 @@
 # ExD projekt forbedret til eksamen 1. semester, 2025
- **Udvikler: Freja Kejser**
-
-    Dette projekt består af en startside, en spil side og en fakta side
-
-        Her er link til mit website: [Github](https:)
+>**Udvikler: Freja Kejser**
+>> Dette projekt består af en startside, en spil side og en fakta side
+>>>*Her er link til mit website: [Github page](https:)*
 
 ## Optimeringer lavet i dette projekt
 ### 1. Startside
 * Ændret mappestrukturen så den er mere overskuelig
     * Samlet alle .css, .js, lyde og billeder i respektive mapper og navngivet ift. hvilken side de hører til.
 * index.html 
-    * Rettet validerings errors, som var at 2 "a" links var placeret inde i en "div", så divene er blevet fjernet og der er ikke længere nogle fejl i validatoren, ved nogle af .html siderne.
+    * Rettet validerings errors, som var at 2 `<a>` links var placeret inde i en `<div>`, så divene er blevet fjernet og der er ikke længere nogle fejl i validatoren, ved nogle af .html siderne.
     * Har ryddet lidt op i denne fil, ved at slette unødvendige ting og samlet nogle ting der hører sammen på 1 linje. 
     * Er gået fra 81 linjer til 75.
 * style.css
