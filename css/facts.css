@@ -321,6 +321,11 @@ body {
 }
 
 .tooltip-content {
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
+.tooltip-text {
+  text-align: center;
+}

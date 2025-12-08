@@ -88,8 +88,9 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class= "tooltip-content">
             <img src=${fish.fishImg} alt=${fish.fishName}>
             <div class= "tooltip-text">
-              <strong>${fish.fishName}</strong><br>
-              Fact: ${fish.fishFact}
+              <strong>${fish.fishName}</strong>
+              <hr>
+              ${fish.fishFact}
             </div>
           </div>`; 
         showTooltip(fishFacts);
