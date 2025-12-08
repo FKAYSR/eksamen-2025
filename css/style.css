@@ -78,11 +78,37 @@ body {
 #fish-button {
   left: 10%;
   top: 40vh;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 #play-button {
   width: 350px;
   top: 15vh;
+  animation: floats 4s ease-in-out infinite;
+}
+
+@keyframes floats {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .bubble {
