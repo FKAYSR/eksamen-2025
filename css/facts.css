@@ -57,7 +57,6 @@ body {
   bottom: 16px;
   left: 40px;
   transform: none;
-  z-index: 1;
 }
 
 #skattekiste img {
@@ -260,18 +259,17 @@ body {
 /* Bestemmer placering af pop-up med facts */
 .facts {
   position: fixed;
-  right: 40vw;
-  bottom: 30vh;
+  right: 28vw;
+  bottom: 10vh;
   background-image: url(../images/facts/Pop-up.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 400px;
-  height: 320px;
-  padding: 30px;
+  width: 700px;
+  height: 560px;
+  padding: 20px;
   font-size: 14px;
   line-height: 1.35;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
   opacity: 0;
   transition: opacity 0.25s ease, transform 0.25s ease;
   pointer-events: none; /*så objektet ikke fanger musen når man flytter den henover*/
@@ -290,6 +288,25 @@ body {
   align-items: center;
 }
 
+.tooltip-content img {
+  display: flex;
+  width: 2000px;
+  padding-top: 150px;
+}
+
 .tooltip-text {
-  text-align: center;
+  text-align: left;
+  font-size: xx-large;
+  max-width: 300px;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  inset: 0; /* Fylder hele skærmen */
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#overlay.is-visible {
+  display: block;
 }

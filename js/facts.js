@@ -75,10 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
   function showTooltip(html) {
     tooltip.innerHTML = html;
     tooltip.classList.add("is-visible");
-    setTimeout(() => {
-      tooltip.classList.remove("is-visible");
-    }, 8000);
+    overlay.classList.add("is-visible");
   }
+
+  function hideTooltip(html) {
+    tooltip.classList.remove("is-visible");
+    overlay.classList.remove("is-visible");
+  }
+
+  overlay.addEventListener("click", hideTooltip);
 
  fishInfo.forEach((fish) => {
   const fishDetails = document.getElementById(fish.id);
@@ -98,3 +103,5 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   });
 });
+
+  
