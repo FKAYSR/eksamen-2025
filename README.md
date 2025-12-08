@@ -1,6 +1,5 @@
-# Akvarie - Interkativt Pac-Nemo spil og fakta-skærm
-ExD projekt forbedret til eksamen 1. semester, 2025
-**Udvikler: Freja Kejser**
+# ExD projekt forbedret til eksamen 1. semester, 2025
+- **Udvikler: Freja Kejser**
 
 Dette projekt består af en startside, en spil side og en fakta side
 
