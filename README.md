@@ -2,7 +2,7 @@
 
 > **Udvikler: Freja Kejser**
 > > Dette projekt består af en startside, en spil side og en fakta side
-> > > _Her er link til mit website: [Github page](https://fkaysr.github.io/eksamen_exd_2025/index.html)_
+> > > _Her er link til mit website: [Github page](https://fkaysr.github.io/eksamen-2025/index.html)_
 
 ## Optimeringer lavet i dette projekt
 
