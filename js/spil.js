@@ -111,6 +111,7 @@ function kollision() {
 
     // Kollisions test
     const cRect = c.getBoundingClientRect();
+    
     if (!(cRect.right < dodgerRect.left ||
       cRect.left > dodgerRect.right ||
       cRect.top < dodgerRect.top ||

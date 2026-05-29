@@ -70,6 +70,7 @@ const fishInfo = [
 // Venter med at køre JS koden indtil hele HTML-siden er indlæst
 document.addEventListener("DOMContentLoaded", () => {
   const tooltip = document.getElementById("tooltip"); // Finder tooltip id og gemmer det i en variabel
+  const overlay = document.getElementById("overlay");
   // Funktion der viser tooltip med fiskeoplysninger
   // Parameter: html - den tekst indeholdende html-tags som vi vil vise i tooltip'en
   function showTooltip(html) {

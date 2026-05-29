@@ -39,19 +39,6 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Tilbage knappen */
-#tilbage {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-#tilbage:hover {
-  transform: scale(1.05);
-}
-
 #skattekiste {
   position: absolute;
   bottom: 16px;
@@ -74,6 +61,19 @@ body {
 .pirat img {
   max-width: 100vw;
   height: 90vh;
+}
+
+/* Tilbage knappen */
+#tilbage {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#tilbage:hover {
+  transform: scale(1.05);
 }
 
 /* Fiskenes animationer */
@@ -267,7 +267,7 @@ body {
   background-repeat: no-repeat;
   width: 700px;
   height: 560px;
-  padding: 20px;
+  /* padding: 20px; */
   font-size: 14px;
   line-height: 1.35;
   opacity: 0;
